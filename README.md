@@ -9,7 +9,7 @@ Note: The 2-week limit is a github limitation, this repo will not help you get t
 
 ## Instructions
 ### Create a personal access token on github
-You can [create a token here](https://github.com/settings/tokens), and give it the public_repo permission.
+You can [create a token here](https://github.com/settings/tokens), and give it the public_repo permission.\
 ![image](https://user-images.githubusercontent.com/17073202/114321321-300d0700-9acf-11eb-8720-647ba306651a.png)
 
 ### Create a credentials.py file in the same directory

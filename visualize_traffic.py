@@ -1,8 +1,4 @@
-import matplotlib.pyplot as plt
 import pandas as pd
-
-
-plt.style.use('ggplot')
 
 
 clone_df = pd.read_csv('clone_data.csv')
@@ -10,8 +6,6 @@ view_df = pd.read_csv('view_data.csv')
 
 total_clones = clone_df['total_clones'].sum()
 total_views = view_df['total_views'].sum()
-
-view_repos = view_df['repo_name'].unique()
 
 
 def print_clone_data():

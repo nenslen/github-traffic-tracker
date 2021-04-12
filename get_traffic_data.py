@@ -58,7 +58,7 @@ def get_clone_and_view_data(repos):
                 'repo_name': name,
                 'date': timestamp,
                 'total_clones': clone['count'],
-                'unique_clones': clone['count']
+                'unique_clones': clone['uniques']
             }
             clone_df = clone_df.append(new, ignore_index=True)
                 
@@ -73,7 +73,7 @@ def get_clone_and_view_data(repos):
                 'repo_name': name,
                 'date': timestamp,
                 'total_views': view['count'],
-                'unique_views': view['count']
+                'unique_views': view['uniques']
             }
             view_df = view_df.append(new, ignore_index=True)
     

@@ -8,16 +8,19 @@ Note: The 2-week limit is a github limitation, this repo will not help you get t
 
 
 ## Instructions
-### Create a personal access token on github
+### 1) Create a personal access token on github
 You can [create a token here](https://github.com/settings/tokens), and give it the public_repo permission.\
 ![image](https://user-images.githubusercontent.com/17073202/114321321-300d0700-9acf-11eb-8720-647ba306651a.png)
 
-### Create a credentials.py file in the same directory
+### 2) Create a credentials.py file in the same directory
 You just need the TOKEN and OWNER variables defined:
 ```python
 TOKEN = 'YOUR GITHUB TOKEN'
 OWNER = 'YOUR GITHUB USERNAME'
 ```
 
-### Run it at least once every 2 weeks
-I run mine every day, as duplicates won't be added
+### 3) Run get_traffic_data.py at least once every 2 weeks
+This will create/update the clone_data.csv and view_data.csv files. I run mine once a day so the data is always up to date. Note that days with 0 clones/views are not recorded in these files, so if your files are still empty after running get_traffic_data.py, it's because none of your repos have any clones/views yet :(
+
+### 4) Visualize your data
+The traffic data is stored in clone_data.csv and view_data.csv, so you can visualize your data however you like using those files. Personally, I keep things simple and just run view_data.py, which outputs some very basic tables with the data I want to see.

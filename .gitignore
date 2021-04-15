@@ -115,3 +115,4 @@ dmypy.json
 clone_data.csv
 view_data.csv
 credentials.py
+get_traffic.bat
